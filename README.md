@@ -26,7 +26,7 @@ integrated into a cross-platform CI/CD pipeline (Windows + Linux).
 
 |---|---|---|
 
-| `unit-tests/` | Component/Unit Testing | \_(pending — Phase 3)\_ |
+| `unit-tests/` | Component/Unit Testing | pytest, Jest, JUnit |
 
 | `integration-tests/` | Integration Testing | \_(pending — Phase 4)\_ |
 
@@ -54,7 +54,7 @@ both Windows and Linux runners. \_(pending — Phase 8)\_
 
 \- \[x] Phase 2 — Version control and repo structure
 
-\- \[ ] Phase 3 — Unit Testing
+\- \[X] Phase 3 — Unit Testing
 
 \- \[ ] Phase 4 — Integration Testing
 
