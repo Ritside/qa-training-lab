@@ -1,0 +1,7 @@
+# Normaliza todos los archivos de texto a LF en el repositorio,
+# sin importar desde qué sistema operativo se edite
+* text=auto eol=lf
+
+# Los scripts de Windows sí deben mantenerse en CRLF
+*.bat text eol=crlf
+*.ps1 text eol=crlf
