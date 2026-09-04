@@ -1,0 +1,33 @@
+# Dependencias
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Archivos de configuración de editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Reportes y resultados de pruebas generados
+*.log
+coverage/
+test-results/
+htmlcov/
+.pytest_cache/
+allure-results/
+allure-report/
+
+# Compilados de Java/Maven/Gradle
+target/
+build/
+*.class
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Variables de entorno / secretos (nunca deben subirse a Git)
+.env
+*.env.local
