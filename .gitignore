@@ -11,6 +11,7 @@ __pycache__/
 *.iml
 
 # Reportes y resultados de pruebas generados
+*.html
 *.log
 coverage/
 test-results/

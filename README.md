@@ -28,7 +28,7 @@ integrated into a cross-platform CI/CD pipeline (Windows + Linux).
 
 | `unit-tests/` | Component/Unit Testing | pytest, Jest, JUnit |
 
-| `integration-tests/` | Integration Testing | \_(pending — Phase 4)\_ |
+| `integration-tests/` | Integration Testing | Postman, Newman |
 
 | `system-tests/` | System Testing (E2E) | \_(pending — Phase 5)\_ |
 
@@ -56,7 +56,7 @@ both Windows and Linux runners. \_(pending — Phase 8)\_
 
 \- \[X] Phase 3 — Unit Testing
 
-\- \[ ] Phase 4 — Integration Testing
+\- \[X] Phase 4 — Integration Testing
 
 \- \[ ] Phase 5 — System/Acceptance Testing (TDD/BDD/ATDD)
 
