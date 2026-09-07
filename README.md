@@ -30,7 +30,7 @@ integrated into a cross-platform CI/CD pipeline (Windows + Linux).
 
 | `integration-tests/` | Integration Testing | Postman, Newman |
 
-| `system-tests/` | System Testing (E2E) | \_(pending — Phase 5)\_ |
+| `system-tests/` | System Testing (E2E) | Playwright (JS/Python/Java), Selenium (JS/Python/Java) |
 
 | `acceptance-tests/` | Acceptance Testing (BDD/ATDD) | \_(pending — Phase 5)\_ |
 
