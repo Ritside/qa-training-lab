@@ -1,20 +1,8 @@
-const { Builder, By } = require('selenium-webdriver');
-const chrome = require('selenium-webdriver/chrome');
+const { By } = require('selenium-webdriver');
 
 const BASE_URL = 'https://www.saucedemo.com';
 
-function buildDriver() {
-  const options = new chrome.Options();
-  // Mismo fix que en Java y Python: deshabilitar detección de contraseñas
-  // filtradas y gestor de contraseñas, que interfieren con la automatización
-  options.setUserPreferences({
-    'profile.password_manager_leak_detection': false,
-    'credentials_enable_service': false,
-    'profile.password_manager_enabled': false,
-  });
-
-  return new Builder().forBrowser('chrome').setChromeOptions(options).build();
-}
+const { buildDriver } = require('./driverFactory');
 
 describe('Login', () => {
   let driver;

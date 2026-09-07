@@ -1,18 +1,8 @@
-const { Builder, By } = require('selenium-webdriver');
-const chrome = require('selenium-webdriver/chrome');
+const { By } = require('selenium-webdriver');
 
 const BASE_URL = 'https://www.saucedemo.com';
 
-function buildDriver() {
-  const options = new chrome.Options();
-  options.setUserPreferences({
-    'profile.password_manager_leak_detection': false,
-    'credentials_enable_service': false,
-    'profile.password_manager_enabled': false,
-  });
-
-  return new Builder().forBrowser('chrome').setChromeOptions(options).build();
-}
+const { buildDriver } = require('./driverFactory');
 
 async function cartBadgeExists(driver) {
   const badges = await driver.findElements(By.className('shopping_cart_badge'));

@@ -5,11 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,18 +16,9 @@ public class LoginTest {
     private static final String BASE_URL = "https://www.saucedemo.com";
 
     @BeforeEach
-    void setUp() {
-		ChromeOptions options = new ChromeOptions();
-
-		Map<String, Object> prefs = new HashMap<String, Object>();
-		prefs.put("profile.password_manager_leak_detection", false); // Disables breach popup
-		prefs.put("credentials_enable_service", false);             // Disables "Save password" prompts
-		prefs.put("profile.password_manager_enabled", false);         // Completely disables password manager
-
-		options.setExperimentalOption("prefs", prefs);
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-    }
+	void setUp() {
+		driver = DriverFactory.createDriver();
+	}
 
     @AfterEach
     void tearDown() {
