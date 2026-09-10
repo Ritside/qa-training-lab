@@ -32,7 +32,7 @@ integrated into a cross-platform CI/CD pipeline (Windows + Linux).
 
 | `system-tests/` | System Testing (E2E) | Playwright (JS/Python/Java), Selenium (JS/Python/Java) |
 
-| `acceptance-tests/` | Acceptance Testing (BDD/ATDD) | \_(pending — Phase 5)\_ |
+| `acceptance-tests/` | Acceptance Testing (BDD/ATDD) | Cucumber-JVM (Gherkin/BDD) |
 
 | `performance-tests/` | Non-Functional (Performance) | \_(pending — Phase 6)\_ |
 
@@ -58,7 +58,7 @@ both Windows and Linux runners. \_(pending — Phase 8)\_
 
 \- \[X] Phase 4 — Integration Testing
 
-\- \[ ] Phase 5 — System/Acceptance Testing (TDD/BDD/ATDD)
+\- \[X] Phase 5 — System/Acceptance Testing (TDD/BDD/ATDD)
 
 \- \[ ] Phase 6 — Non-Functional Testing
 
