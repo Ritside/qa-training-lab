@@ -34,9 +34,9 @@ integrated into a cross-platform CI/CD pipeline (Windows + Linux).
 
 | `acceptance-tests/` | Acceptance Testing (BDD/ATDD) | Cucumber-JVM (Gherkin/BDD) |
 
-| `performance-tests/` | Non-Functional (Performance) | \_(pending — Phase 6)\_ |
+| `performance-tests/` | Non-Functional (Performance) | JMeter, Lighthouse |
 
-| `security-tests/` | Non-Functional (Security) | \_(pending — Phase 6)\_ |
+| `security-tests/` | Non-Functional (Security) | OWASP ZAP |
 
 
 
@@ -60,7 +60,7 @@ both Windows and Linux runners. \_(pending — Phase 8)\_
 
 \- \[X] Phase 5 — System/Acceptance Testing (TDD/BDD/ATDD)
 
-\- \[ ] Phase 6 — Non-Functional Testing
+\- \[X] Phase 6 — Non-Functional Testing
 
 \- \[ ] Phase 7 — Regression/Maintenance Testing
 
